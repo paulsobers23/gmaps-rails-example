@@ -27,6 +27,17 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+      <%= form.submit %>
   </div>
+<% end %>
+
+<p>
+    <div id="map2"></div>
+</p>
+
+<% provide :head_tags do %>
+    <meta name='turbolinks-visit-control' content='reload'>
+    <script>
+     document.addEventListener("DOMContentLoaded", initMap2);
+    </script>
 <% end %>
